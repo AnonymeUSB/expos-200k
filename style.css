@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Alexana";
+    src: url("Quantum.otf");
+}
+
+@font-face {
+    font-family: "Glitch";
+    src: url("Doctor\ Glitch.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Alexana";
+}
+
+.section {
+  align-items: center;
+  background: url('E0E8-ifWYAYaFAh.jpg') no-repeat center / cover;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  position: sticky;
+  width: 100%;
+  z-index: -1;
+  font-family: "Glitch";
+}
+
+#t1 {
+    background: url(https://www.weodeo.com/wp-content/uploads/2022/04/localvsdatacenter-scaled.webp)   -20px -20px no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.section:nth-child(2) {
+  background-image: url('https://images.unsplash.com/photo-1571413666114-1e5d1f2bad15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80');
+	z-index: -2;
+}
+
+.section:nth-child(3) {
+  background-image: url('https://images.unsplash.com/photo-1552224647-b3a8f931b3b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+	z-index: -3;
+}
+
+.section:last-child {
+  background-image: url('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  z-index: -4;
+}
+
+.title {
+  color: #FFF;
+  font-size: 5rem;
+}
+
+@supports not (-webkit-text-stroke: 1px #000) {
+  .title {
+    text-shadow:
+       3px  3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+  }
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+      
+      .playing {
+        position: fixed;
+        top: 100%;
+        left: 50%;
+        width: auto;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      .playing:after {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .now.playing .bar {
+        display: inline-block;
+        position: relative;
+        margin-right: 1px;
+        width: 10px;
+        height: 1px;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #ff9500, #ff5e3a);
+        color: transparent;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      .paused.playing .bar {
+        animation-iteration-count: 1;
+      }
+      .n1 {
+        animation-delay: 0.5s;
+      }
+      .n2 {
+        animation-delay: 0.2s;
+      }
+      .n3 {
+        animation-delay: 1.2s;
+      }
+      .n4 {
+        animation-delay: 0.9s;
+      }
+      .n5 {
+        animation-delay: 2.3s;
+      }
+      .n6 {
+        animation-delay: 1.3s;
+      }
+      .n7 {
+        animation-delay: 3.1s;
+      }
+      .n8 {
+        animation-delay: 1.9s;
+      }
+      @keyframes pulse {
+        0% {
+          height: 1px;
+          margin-top: 0;
+        }
+        10% {
+          height: 40px;
+          margin-top: -40px;
+        }
+        50% {
+          height: 20px;
+          margin-top: -20px;
+        }
+        60% {
+          height: 30px;
+          margin-top: -30px;
+        }
+        80% {
+          height: 60px;
+          margin-top: -60px;
+        }
+        100% {
+          height: 1px;
+          margin-top: 0;
+        }
+      }
