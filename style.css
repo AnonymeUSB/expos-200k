@@ -38,6 +38,24 @@ body {
     -webkit-background-clip: text;
 }
 
+#t2 {
+  background: url('15784884.webp') -20px -20px no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#t3 {
+  background: url('Pourquoi-lutilisation-dun-Data-Center-est-elle-aussi-importante-scaled.webp') -20px -20px no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#t4 {
+  background: url('data-1300x520-2.jpg') -20px -20px no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 #video {
   position: absolute;
   width: 100%;
